@@ -9,6 +9,7 @@ services:
   ui:
     #build: ./ui
     #image: ${USERNAME}/ui:${UI_VERSION}
+    image: ${USER_NAME}/ui
     ports:
       - ${UI_PORT}:${UI_PORT}/tcp
     networks:
@@ -16,12 +17,14 @@ services:
   post:
     #build: ./post-py
     #image: ${USERNAME}/post:${POST_VERSION}
+    image: ${USER_NAME}/post
     networks:
       - front_net
       - back_net
   comment:
     #build: ./comment
     #image: ${USERNAME}/comment:${COMMENT_VERSION}
+    image: ${USER_NAME}/comment
     networks:
       - front_net
       - back_net
