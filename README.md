@@ -13,6 +13,10 @@ Maintain and start project with Bridge Work Driver. Run install and run project 
 
 Monitoring 1: Installed and configured Prometheus
 
+GitlabCi-1:
+
+Погдготовлено окружение с использованием terraform, на ВМ развернут Docker и Gitlab с типом Omnibus, настроены необходимые проекты, добавлен раннер, добавлены запуски пайплайнов деплоя приложения в Gitlab, создано несколько окружений.
+
 logging1:
 
 Подготовлено окружение для домашней работы, изменены docker-файлы и compose-файлы. Настроена отправка логов для наших сервисов. Развернута Kibana и добавлен просмотр соответствующих логов. Добавлена фильтрация логов и Grok-шаблоныю. Развернут сервис Zipkin как tracing-система.
